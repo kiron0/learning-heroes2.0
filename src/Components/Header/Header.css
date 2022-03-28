@@ -112,3 +112,31 @@
         font-weight: 700;
       }
 }
+
+@media screen and (min-width: 776px) {
+  .header{
+    padding-right: 30px;
+  }
+  .header img{
+    width: 40px;
+    margin-left: -12%;
+  }
+  .header-title{
+    margin-left: -13%;
+    font-size: 28px;
+  }  
+}
+
+@media screen and (min-width: 992px) {
+  .header{
+    padding-right: 140px;
+}
+.header img{
+  width: 40px;
+  margin-left: 0%;
+  }
+  .header-title{
+    margin-left: -53%;
+    font-size: 28px;
+  } 
+}
