@@ -14,13 +14,13 @@
     border: 2px solid rgba(155, 154, 154, 0.1);
 }
 
-.header a{
+.nav-link{
     text-decoration: none;
     margin: 0 10px;
     color: rgb(77, 72, 72);
     font-weight: 500;
 }
-.header a:hover{
+.nav-link:hover{
     color: orange;
 }
 
@@ -28,8 +28,14 @@
   width: 40px;
 }
 
-.header h2{
+.header a{
+  color: rgb(77, 72, 72);
+  text-decoration: none;
+}
+
+.header-title{
   margin-left: -55%;
+  font-size: 28px;
 }
 
 .navbar-items {
@@ -100,8 +106,9 @@
         width: 30px;
         margin-left: -100%;
       }
-      .header h2{
+      .header-title{
         font-size: 21px;
         margin-left: 0%;
+        font-weight: 700;
       }
 }
