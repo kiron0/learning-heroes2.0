@@ -6,10 +6,17 @@ import './Cart.css'
 const Cart = (props) => {
     const {cart, removeFromCart, clearCart, chooseRandom, random} = props;
 
+    //Cart Total Price
+    let totalPrice = 0;
+    for (const price of cart) {
+        totalPrice = totalPrice + price.price;
+    };
+
     return (
         <>
         <div className='cart reverse-main'>
-            <h3>Selected Courses</h3>
+            <h3>Selected Courses: {cart.length}</h3>
+            <p>Total Price: $ {totalPrice}</p>
             {
                 cart.map(courseInfo => <DisplayCartInfo
                     key={courseInfo.id}

@@ -2,12 +2,16 @@
     position: sticky;
     margin: 0 auto;
     text-align: center;
-    top: 150px;
+    top: 125px;
     bottom: 0;
 }
 
 .cart h3{
-    font-size: 22px;
+    font-size: 20px;
+    color: rgb(77, 72, 72);
+}
+.cart p{
+    font-weight: 600;
     color: rgb(77, 72, 72);
 }
 
