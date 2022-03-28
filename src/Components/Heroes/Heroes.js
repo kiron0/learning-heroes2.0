@@ -18,6 +18,24 @@ const Heroes = () => {
   }, []);
 
   /* Add To Cart */
+  // const [cart, setCart] = useState([]);
+  // const handleAddToCart = (course) => {
+  //   const newCourse = [...cart, course];
+  //   if (cart.length === 0) {
+  //     setCart(newCourse);
+  //   } else {
+  //     const newCart = [...cart];
+  //     const index = newCart.findIndex((item) => item.id === course.id);
+  //     if (index === -1) {
+  //       setCart(newCourse);
+  //     } else {
+  //       newCart[index] = course;
+  //       setCart(newCart);
+  //     }
+  //   }
+  // };
+
+  // handle add to cart
   const [cart, setCart] = useState([]);
   const handleAddToCart = (course) => {
     const newCourse = [...cart, course];
@@ -31,9 +49,16 @@ const Heroes = () => {
       } else {
         newCart[index] = course;
         setCart(newCart);
+        Swal.fire({
+          title: "Already Added",
+          text: "You have already added this course to cart",
+          icon: "success",
+        });
       }
     }
   };
+
+
   // if cart items is greater than 4 then show alert
   if (cart.length > 4) {
     Swal.fire({
