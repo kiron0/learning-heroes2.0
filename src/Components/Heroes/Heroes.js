@@ -40,7 +40,6 @@ const Heroes = () => {
     }
   };
 
-
   // if cart items is greater than 4 then show alert
   if (cart.length > 4) {
     Swal.fire({
@@ -59,12 +58,11 @@ const Heroes = () => {
     setCart(newList);
   };
 
-  /* Remove all item from cart */
+  // remove all items from cart
   const clearCart = () => {
-    const newList = [];
-    setCart(newList);
-    setRandom([]);
+    setCart([]);
   };
+
   /* Show random items */
   const chooseRandom = () => {
     const random = cart[Math.floor(Math.random() * cart.length)];
