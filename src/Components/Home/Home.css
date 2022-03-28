@@ -1,10 +1,7 @@
 .home{
-    margin-top: 20rem;
-}
-
-.home h1{
-    width: 40%;
     margin: 0 auto;
+    margin-top: 20rem;
+    width: 40%;
     padding: 20px;
     border-radius: 10px;
     border: 2px solid rgba(155, 154, 154, 0.1);
@@ -13,12 +10,17 @@
     color: rgb(77, 72, 72);
 }
 
+.home p{
+    font-weight: 500;
+}
+
 @media screen and (max-width: 490px){
     .home{
-        margin-top: 18rem;
-    }
-    
-    .home h1{
+        margin-top: 13rem;
         width: 80%;
+    }
+
+    .home h1{
+        font-size: 25px;
     }
 }
