@@ -1,6 +1,6 @@
 import React from 'react';
 import Logo from './favicon.png'
-import { HiMenuAlt1 } from "react-icons/hi";
+import { RiMenu4Fill } from "react-icons/ri";
 import './Header.css'
 import { Link } from 'react-router-dom';
 
@@ -12,7 +12,7 @@ const Header = () => {
                 <nav>
                     <input type="checkbox" id="check" />
                     <label for="check" className='checkbtn'>
-                    <HiMenuAlt1 className='nav-bar-icon'></HiMenuAlt1>
+                    <RiMenu4Fill className='nav-bar-icon'></RiMenu4Fill>
                     </label>
                     <ul className='navbar-items'>
                         <Link to="/home" className='nav-link'>Home</Link>
