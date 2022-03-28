@@ -17,24 +17,6 @@ const Heroes = () => {
       .then((data) => setHeroes(data));
   }, []);
 
-  /* Add To Cart */
-  // const [cart, setCart] = useState([]);
-  // const handleAddToCart = (course) => {
-  //   const newCourse = [...cart, course];
-  //   if (cart.length === 0) {
-  //     setCart(newCourse);
-  //   } else {
-  //     const newCart = [...cart];
-  //     const index = newCart.findIndex((item) => item.id === course.id);
-  //     if (index === -1) {
-  //       setCart(newCourse);
-  //     } else {
-  //       newCart[index] = course;
-  //       setCart(newCart);
-  //     }
-  //   }
-  // };
-
   // handle add to cart
   const [cart, setCart] = useState([]);
   const handleAddToCart = (course) => {
