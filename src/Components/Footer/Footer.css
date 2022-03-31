@@ -4,10 +4,8 @@
     color: rgb(77, 72, 72);
     border: 2px solid rgba(155, 154, 154, 0.1);
     padding: 1rem;
-    border-radius: .5rem;
-    width: 40%;
+    width: 100%;
     margin: 0 auto;
-    margin-bottom: .5rem;
 }
 
 .footer-info{
@@ -27,10 +25,8 @@
 
 @media screen and (max-width: 490px) {
     .footer{
-        border-radius: .5rem;
-        width: 85%;
+        width: 90%;
         margin: 0 auto;
-        margin-bottom: .5rem;
     }
 
     .author{

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Footer from '../Footer/Footer';
 import ShowInstructors from '../ShowInstructors/ShowInstructors';
 import './Instructors.css'
 import '../Footer/Footer.css'
@@ -16,14 +15,11 @@ const Instructors = () => {
     }, []);
 
     return (
-        <div>
             <div className='instructors'>
             {
                 instructors.map(instructor => <ShowInstructors ShowInstructors={instructor}></ShowInstructors>)
             }
-        </div>
-         <Footer></Footer>
-        </div>
+            </div>
     );
 };
 

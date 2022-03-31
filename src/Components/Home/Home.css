@@ -2,7 +2,7 @@
     margin: 0 auto;
     margin-top: 20rem;
     width: 40%;
-    padding: 20px;
+    padding: 50px;
     border-radius: 10px;
     border: 1px solid rgba(155, 154, 154, 0.1);
     background-image: linear-gradient(180deg, rgba(201, 201, 201, 0.027), rgba(189, 186, 186, 0.089));
@@ -12,16 +12,46 @@
 
 .home p{
     font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.explore-btn{
+    width: 25%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: 600;
+    border-radius: .5rem;
+    border: 1px solid rgba(155, 154, 154, 0.1);
+    background-image: linear-gradient(180deg, rgba(201, 201, 201, 0.027), rgba(189, 186, 186, 0.089));
+    backdrop-filter: blur(5px);
+    color: rgb(77, 72, 72);
+}
+
+.arrow{
+    font-size: 2rem;
 }
 
 @media screen and (max-width: 490px){
     .home{
-        margin-top: 13rem;
-        width: 80%;
+        margin-top: 12rem;
+        width: 75%;
+        padding: 30px;
     }
 
     .home h1{
-        font-size: 25px;
+        font-size: 23px;
+    }
+
+    .explore-btn{
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 

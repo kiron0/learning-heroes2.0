@@ -102,9 +102,9 @@
         align-items: center;
         justify-content: space-between;
       }
-      .header img{
-        width: 30px;
-        margin-left: -100%;
+      .icon{
+        font-size: 2rem;
+        margin-left: -105%;
       }
       .header-title{
         font-size: 21px;
@@ -117,8 +117,8 @@
   .header{
     padding-right: 30px;
   }
-  .header img{
-    width: 40px;
+  .icon{
+    font-size: 2rem;
     margin-left: -12%;
   }
   .header-title{
@@ -131,9 +131,9 @@
   .header{
     padding-right: 140px;
 }
-.header img{
-  width: 40px;
-  margin-left: 0%;
+  .icon{
+  font-size: 2rem;
+  margin-left: 1%;
   }
   .header-title{
     margin-left: -53%;

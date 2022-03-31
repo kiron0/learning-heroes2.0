@@ -1,13 +1,12 @@
 import React from 'react';
-import Logo from './favicon.png'
-import { RiMenu4Fill } from "react-icons/ri";
+import { RiMenu4Fill, RiUserHeartLine } from "react-icons/ri";
 import './Header.css'
 import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
         <div className='header'>
-            <img src={Logo} alt="" />
+            <RiUserHeartLine className='icon'></RiUserHeartLine>
             <h2 className='header-title'><Link to="/">Learning Heroes</Link></h2>
                 <nav>
                     <input type="checkbox" id="check" />
