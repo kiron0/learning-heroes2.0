@@ -61,6 +61,7 @@ const Heroes = () => {
   // remove all items from cart
   const clearCart = () => {
     setCart([]);
+    setRandom([]);
   };
 
   /* Show random items */
