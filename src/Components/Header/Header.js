@@ -1,6 +1,7 @@
 import React from 'react';
 import { RiMenu4Fill, RiUserHeartLine } from "react-icons/ri";
 import './Header.css'
+import CustomLink from '../CustomLink/CustomLink';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
@@ -14,11 +15,11 @@ const Header = () => {
                     <RiMenu4Fill className='nav-bar-icon'></RiMenu4Fill>
                     </label>
                     <ul className='navbar-items'>
-                        <Link to="/home" className='nav-link'>Home</Link>
-                        <Link to="/instructors" className='nav-link'>Instructors</Link>
-                        <Link to="/courses" className='nav-link'>Courses</Link>
-                        <Link to="/faq" className='nav-link'>Faq</Link>
-                        <Link to="/about" className='nav-link'>About</Link>
+                        <CustomLink to="/home" className='nav-link'>Home</CustomLink>
+                        <CustomLink to="/instructors" className='nav-link'>Instructors</CustomLink>
+                        <CustomLink to="/courses" className='nav-link'>Courses</CustomLink>
+                        <CustomLink to="/faq" className='nav-link'>Faq</CustomLink>
+                        <CustomLink to="/about" className='nav-link'>About</CustomLink>
                     </ul>
                 </nav>
         </div>
