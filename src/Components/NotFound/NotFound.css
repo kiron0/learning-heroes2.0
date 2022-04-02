@@ -12,7 +12,8 @@
 .not-found p{
     font-weight: 500;
     line-height: 25px;
-    text-align: start;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .error{
@@ -20,18 +21,37 @@
     color: red;
 }
 
+.go-back{
+    text-decoration: none;
+    background-image: linear-gradient(180deg, rgba(201, 201, 201, 0.027), rgba(189, 186, 186, 0.089));
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(155, 154, 154, 0.1);
+    padding: 15px 20px;
+    border-radius: .5rem;
+    color: rgb(77, 72, 72);
+    font-weight: 600;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 490px) {
     .not-found{
         width: 70%;
         padding: 30px;
-        margin: 13rem auto;
+        margin: 9rem auto;
+    }
+
+    .not-found p{
+        margin-bottom: 35px;
     }
 }
 @media screen and (min-width: 776px) {
     .not-found{
-        width: 30%;
-        padding: 35px;
-        margin: 18rem auto;
+        width: 40%;
+        padding: 40px;
+        margin: 12rem auto;
+    }
+    .not-found p{
+        margin-bottom: 55px;
     }
 }
 @media screen and (min-width: 992px) {
@@ -40,7 +60,7 @@
         background-color: var(--bg-color);
         box-shadow: var(--box-shadow);
         padding: 70px;
-        margin: 15rem auto;
+        margin: 13rem auto;
         border-radius: .5rem;
     }
 }

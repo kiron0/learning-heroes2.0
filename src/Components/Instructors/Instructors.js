@@ -17,7 +17,7 @@ const Instructors = () => {
     return (
             <div className='instructors'>
             {
-                instructors.map(instructor => <ShowInstructors ShowInstructors={instructor}></ShowInstructors>)
+                instructors.map(instructor => <ShowInstructors ShowInstructors={instructor} key={instructor.id}></ShowInstructors>)
             }
             </div>
     );
