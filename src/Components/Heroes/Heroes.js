@@ -11,7 +11,7 @@ const Heroes = () => {
 
   useEffect(() => {
     fetch(
-      "https://raw.githubusercontent.com/kiron0/fakeData-for-lucky-one/main/fakeData.json"
+      "https://lucky-one.herokuapp.com/heroes"
     )
       .then((res) => res.json())
       .then((data) => setHeroes(data));

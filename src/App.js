@@ -6,6 +6,7 @@ import Faq from './Components/Faq/Faq';
 import Header from './Components/Header/Header';
 import Heroes from './Components/Heroes/Heroes';
 import Home from './Components/Home/Home';
+import InstructorDetails from './Components/InstructorDetails/InstructorDetails';
 import Instructors from './Components/Instructors/Instructors';
 import NotFound from './Components/NotFound/NotFound';
 
@@ -17,6 +18,7 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/instructors' element={<Instructors></Instructors>}></Route>
+        <Route path='/instructor/:id' element={<InstructorDetails></InstructorDetails>}></Route>
         <Route path='/courses' element={<Heroes></Heroes>}></Route>
         <Route path='/faq' element={<Faq></Faq>}></Route>
         <Route path='/about' element={<About></About>}></Route>

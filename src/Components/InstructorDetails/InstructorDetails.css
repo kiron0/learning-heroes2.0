@@ -1,0 +1,36 @@
+.details-inst {
+  width: 50%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid rgba(155, 154, 154, 0.1);
+  background-image: linear-gradient(
+    180deg,
+    rgba(201, 201, 201, 0.027),
+    rgba(189, 186, 186, 0.089)
+  );
+  backdrop-filter: blur(5px);
+  color: rgb(77, 72, 72);
+}
+.details-inst img {
+  border: 3px solid rgba(68, 67, 67, 0.281);
+  width: 180px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 490px) {
+  .details-inst {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 776px) {
+  .details-inst {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .details-inst {
+    width: 25%;
+  }
+}
